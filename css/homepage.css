@@ -1,0 +1,105 @@
+/* --- 1. HERO SECTION --- */
+.hero {
+    padding: 60px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-family: var(--font-display); /* Uses variable from global.css */
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+/* Hero Stats */
+.hero-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.hero-stats li {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    border-right: 1px solid var(--color-light-gray);
+}
+.hero-stats li:last-child {
+    border-right: none;
+}
+.hero-stats strong {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+.hero-stats span {
+    font-size: 14px;
+    color: var(--color-text-light);
+}
+
+/* Hero Image & Stars */
+.hero-models {
+    max-width: 100%;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.hero-star {
+    position: absolute;
+    z-index: 1;
+    width: 60px; /* Example size */
+}
+.star-1 {
+    top: 20px;
+    right: 40px;
+}
+.star-2 {
+    bottom: 20px;
+    left: 40px;
+}
+
+/* --- 2. BRANDS BAR --- */
+.brands-bar {
+    background-color: var(--color-black);
+    padding: 40px 0;
+}
+.brands-bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brands-bar img {
+    max-height: 35px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+.brands-bar img[src*="brand-prada"] {
+    filter: none;
+    max-height: 25px;
+}
