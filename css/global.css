@@ -1,15 +1,27 @@
+/* --- 1. LOCAL FONT DEFINITIONS --- */
+
+@font-face {
+    font-family: 'Integral CF';
+
+    src: url('../assets/fonts/integralCF.otf') format('opentype');
+    font-weight: 100; 
+    font-style: normal;
+}
+
+
 :root {
     --font-primary: 'Satoshi', sans-serif;
-    --font-display: 'Montserrat',
-    sans-serif;
-
+    --font-display: 'Integral CF', sans-serif; /* Cleaned up formatting */
     --color-black: #000000;
     --color-white: #FFFFFF;
     --color-light-gray: #F0F0F0;
     --color-text-gray: #333333;
     --color-text-light: #555555;
+    --color-hero-bg: #F2F0F1;
 }
 
+
+/* --- 3. GLOBAL RESET & BASE STYLES --- */
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +48,8 @@ button {
     font-family: inherit;
 }
 
+
+/* --- 4. SHARED UTILITY CLASSES --- */
 .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -44,7 +58,7 @@ button {
 
 .btn {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 11px 85px;
     font-size: 16px;
     font-weight: 600;
     border-radius: 30px;
@@ -61,6 +75,8 @@ button {
     color: var(--color-black);
 }
 
+
+/* --- 5. SHARED COMPONENT STYLES (Promo Bar & Header) --- */
 .promo-bar {
     background-color: var(--color-black);
     color: var(--color-white);
@@ -91,6 +107,10 @@ button {
     position: absolute;
     right: 20px;
     line-height: 1;
+}
+
+.main-header {
+    background-color: var(--color-white);
 }
 
 .main-header .container {
@@ -132,9 +152,9 @@ button {
     display: flex;
     align-items: center;
     background-color: var(--color-light-gray);
-    padding: 8px 15px;
-    border-radius: 30px;
-    width: 300px;
+    padding: 8px 10px;
+    border-radius: 50px;
+    width: 500px;
 }
 .search-bar input {
     border: none;
@@ -173,4 +193,24 @@ button {
 }
 .icon-user {
     background-image: url('../images/icon-user.svg');
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: var(--color-black);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.btn-light {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid var(--color-light-gray);
+}
+
+.btn-light:hover {
+    background-color: var(--color-light-gray);
 }

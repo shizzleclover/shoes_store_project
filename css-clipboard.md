@@ -310,3 +310,142 @@ button {
     filter: none;
     max-height: 25px;
 }
+
+
+
+
+## globals.css update ##
+/* css/global.css */
+
+/* ... (all your previous styles) ... */
+
+/* --- 6. SHARED SECTION STYLES --- */
+
+.section-title {
+    font-family: var(--font-display);
+    font-weight: 800; /* Use the bold weight */
+    font-size: 40px;
+    text-align: center;
+    color: var(--color-black);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* --- 7. NEW BUTTON STYLES --- */
+
+.btn-light {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid var(--color-light-gray);
+}
+
+.btn-light:hover {
+    background-color: var(--color-light-gray);
+}
+
+## home page updates##
+/* css/homepage.css */
+
+/* ... (hero and brands styles) ... */
+
+/* --- 3. NEW ARRIVALS SECTION --- */
+
+.new-arrivals {
+    padding: 60px 0;
+}
+
+.product-grid {
+    display: grid;
+    /* Create 4 equal columns */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Space between cards */
+}
+
+.product-card {
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card-image-container {
+    background-color: var(--color-light-gray);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 250px; /* Give images a consistent height */
+    object-fit: cover; /* Was 'contain', 'cover' looks more like the design */
+    display: block;
+    border-radius: 10px; /* In case the image itself isn't rounded */
+}
+
+.card-content {
+    padding: 0 10px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 8px;
+    /* Prevents title from wrapping to 3 lines */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #FFC107; /* Gold/Yellow for stars */
+}
+
+.card-rating .star-empty {
+    color: var(--color-light-gray); /* Empty stars */
+}
+
+.card-rating .rating-text {
+    font-size: 12px;
+    color: var(--color-text-light);
+    margin-left: 5px;
+}
+
+.card-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.card-price .price-original {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text-light);
+    text-decoration: line-through;
+}
+
+.card-price .sale-badge {
+    font-size: 12px;
+    font-weight: 600;
+    color: #FF0000; /* Red */
+    background-color: #FFE5E5; /* Light red */
+    padding: 4px 8px;
+    border-radius: 30px;
+}
+
+.view-all-container {
+    text-align: center;
+    margin-top: 50px;
+}

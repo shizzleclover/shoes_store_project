@@ -94,3 +94,94 @@
 
     </body>
 </html>
+
+## SECION 2 HONE PAGE ##
+...
+    </main>
+
+        <section class="brands-bar">
+            ...
+        </section>
+
+        <section class="new-arrivals">
+            <div class="container">
+                <h2 class="section-title">NEW ARRIVALS</h2>
+
+                <div class="product-grid">
+
+                    <div class="product-card">
+                        <div class="card-image-container">
+                            <img src="images/product-t-shirt.jpg" alt="T-shirt with Tape Details">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">T-shirt with Tape Details</h3>
+                            <div class="card-rating">
+                                <span>★★★★</span><span class="star-empty">★</span>
+                                <span class="rating-text">4.5/5</span>
+                            </div>
+                            <div class="card-price">
+                                <span class="price">$120</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-image-container">
+                            <img src="images/product-jeans.jpg" alt="Skinny Fit Jeans">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Skinny Fit Jeans</h3>
+                            <div class="card-rating">
+                                <span>★★★</span><span class="star-empty">★★</span>
+                                <span class="rating-text">3.5/5</span>
+                            </div>
+                            <div class="card-price sale">
+                                <span class="price">$240</span>
+                                <span class="price-original">$360</span>
+                                <span class="sale-badge">-20%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-image-container">
+                            <img src="images/product-checkered-shirt.jpg" alt="Checkered Shirt">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Checkered Shirt</h3>
+                            <div class="card-rating">
+                                <span>★★★★</span><span class="star-empty">★</span>
+                                <span class="rating-text">4.5/5</span>
+                            </div>
+                            <div class="card-price">
+                                <span class="price">$180</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-image-container">
+                            <img src="images/product-striped-tshirt.jpg" alt="Sleeve Striped T-shirt">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Sleeve Striped T-shirt</h3>
+                            <div class="card-rating">
+                                <span>★★★★</span><span class="star-empty">★</span>
+                                <span class="rating-text">4.5/5</span>
+                            </div>
+                            <div class="card-price sale">
+                                <span class="price">$130</span>
+                                <span class="price-original">$160</span>
+                                <span class="sale-badge">-30%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <div class="view-all-container">
+                    <a href="shop.html" class="btn btn-light">View All</a>
+                </div>
+
+            </div> </section>
+
+    </main>
+...
